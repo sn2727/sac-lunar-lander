@@ -9,7 +9,8 @@ This repository contains an implementation of Soft Actor Critic [(SAC)](https://
 
 In entropy-regularized reinforcement learning, the agent gets a bonus reward at each time step proportional to the entropy of the policy at that timestep. Mathematically this renders the RL problem to:
 
-$ \pi^* = \arg \max_{\pi} \mathbb{E}_{\tau \sim \pi} \left[ \sum_{t=0}^{\infty} \gamma^t \left( R(s_t, a_t, s_{t+1}) + \alpha H\left(\pi(\cdot|s_t)\right) \right) \right]$
+<p style="margin-left: 60px;">
+<img src="./resources/eq1.png" alt="original MNIST images" width="600" height="auto"></p>
 
 which is explained in more detail in this [derivation](https://spinningup.openai.com/en/latest/algorithms/sac.html).
 
